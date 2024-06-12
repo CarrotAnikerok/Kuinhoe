@@ -1,0 +1,39 @@
+GET http://localhost:8080/api/v1/kuinhoe
+
+###
+
+POST http://localhost:8080/api/v1/kuinhoe/save_user
+content-type: application/json
+
+{
+    "email": "nynynyny@gmail.com",
+    "password": "qwerty"
+}
+
+###
+
+POST http://localhost:8080/api/v1/kuinhoe/save_user
+content-type: application/json
+
+{
+    "email": "woofwoofwoof@gmail.com",
+    "password": "qwerty"
+}
+
+###
+
+GET http://localhost:8080/api/v1/kuinhoe/woofwoofwoof@gmail.com
+
+###
+
+PUT http://localhost:8080/api/v1/kuinhoe/update_user
+content-type: application/json
+
+{
+    "email": "nynynyny@gmail.com",
+    "password": "qwerty1"
+}
+
+###
+
+DELETE http://localhost:8080/api/v1/kuinhoe/delete_user/woofwoofwoof@gmail.com

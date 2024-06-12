@@ -1,0 +1,271 @@
+/*Дальше нужно сделать один размер main-reыolution для аналогичной работы страницы и навигаторства*/
+
+body {
+    background-color: #5C6D96;
+    background-image: url(/www/img/book_shelf_full.png);
+    background-size: cover;
+	background-attachment: fixed;
+	font-family: "Amatic SC", sans-serif;
+	margin: 0px;
+}
+
+header {
+    display: flex;
+    background: #0e1729;
+	min-height: 80px;
+	height: 10vh;
+	white-space: nowrap; /*запрес переноса текста*/
+}
+
+header a{
+    text-decoration: none;
+	color: #7c8cb1;
+}
+
+header > p {
+    max-width: 900px;
+    color: #BBCFFF;
+    padding: 20px;
+}
+
+.korean-name {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Nanum Myeongjo", serif;
+	font-size: calc(26px + 1vw);
+	color: #BBCFFF;
+	padding: 10px;
+	margin: 10px;
+}
+
+/*Навигационное меню*/
+
+nav {
+	display: flex;
+    justify-content: center;
+    width: 90vw;
+    flex: 1;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	margin: 0px;
+	padding: 0px;
+}
+
+nav ul li {
+	color: #7c8cb1;
+  	text-decoration: none;
+ 	transition: all 0.3s ease;
+  	font-size: calc(25px + 1vw);
+	min-height: 80px;
+ 	height: 10vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+}
+
+nav li:hover {
+	background-color: #435172;
+	transition: all 0.3s ease;
+}
+
+.main-resolution {
+	width: 70vw;
+	margin-left: -9%;
+}
+
+.copy-ul {
+	margin-left: 176px;
+  	display: flex;
+ 	justify-content: center;
+}
+
+#sign_menu {
+	display: flex;
+	position: absolute;
+	right: 50px;
+	top: 15px;
+	font-size: 30px;
+	color: #BBCFFF;
+	align-items: center;
+  	justify-content: center;
+}
+
+#sign_menu span {
+	margin: 10px;
+}
+
+#sign_menu div {
+	position: absolute;
+	min-width: 250px;
+	display: none;
+	font-size: 20px;
+	white-space: wrap;
+	background-color:#1E273C;
+}
+
+#sign_menu #registration {
+	top: 60px;
+	right: 20px;
+} 
+
+#sign_menu #signin {
+	top: 60px;
+	right: 20px;
+}  
+/*Конец навигационного меню*/
+
+/*боковое меню*/
+#side_menu {
+	transition: 1s;
+	position: fixed;
+	color: #BBCFFF;
+	background-color: #0e1729;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	min-height: 50%;
+	max-width: 30%;
+	left: -292px;
+	top: 180px;
+	font-size: 18px;
+	font-family: "Raleway", sans-serif;
+}
+
+#side_menu p {
+	margin-bottom: 30px;
+}
+
+#side_menu_panel {
+	position: absolute;
+	right: -73px;
+	top: 235px;
+}
+
+#side_menu:hover {
+	transition: 1s;
+	left: 0px;
+}
+/*конец бокового меню*/
+
+main {
+  	padding: 1px;
+	min-height: 89.8vh;
+	background: linear-gradient(#1E273C, #0D0F15);
+	text-align: center;
+}
+
+.bubble {
+	color: #040C1D;
+	background-color: #5C6D96;
+	border-radius: 50px;
+    padding: 15px;
+	max-width: 800px;
+	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+	font-size: 20px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-family: "Raleway", sans-serif;
+}
+
+main > h1 {
+	color:#5c6d96;
+	margin-top: 70px;
+	font-size: 60px;
+}
+
+.name {
+	font-size: 60px;
+	-webkit-text-stroke: 1px #BBCFFF;
+	font-weight: 700;
+	text-shadow: 0px 0px 9px #BBCFFF;
+	position: absolute;
+	font-family: "Amatic SC", sans-serif;
+	bottom: 100%;
+	left: 50px;
+}
+
+.speech_bubble {
+	color: #5c6d96;
+	background-color: #0e1729;
+	border-radius: 50px;
+	max-width: 800px;
+	min-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 60px;
+	padding: 30px;
+	display: inline-block;
+	
+}
+
+.speech_bubble p {
+	margin: 0px;
+	padding: 0px;
+}
+
+.speech_bubble p:hover {
+	color: yellow;
+	cursor: pointer;
+}
+
+.librarian {
+	position: relative;
+	height: 300px;
+	margin-top: 20px;
+  	margin-bottom: 30px;
+}
+
+.librarian .bubble {
+	position: relative;
+	margin: 0px;
+	min-height: 150px;
+    display: flex;
+    align-items: center;
+	left: 50%;
+  	transform: translateX(-50%);
+	top: 75px;
+	min-width: 600px;
+	padding-left: 50px;
+ 	padding-right: 50px;
+}
+
+
+.librarian img {
+	position: absolute;
+	width: 300px;
+	left: 90%;
+  	top: -200px;
+}
+
+.thoughts_text {
+	color: #5c6d96;
+ 	font-size: 20px;
+  	font-family: "Raleway", sans-serif;
+}
+
+.pointers {
+	margin-top: 10px;
+	margin-bottom: 90px;
+	stroke: #5c6d96;
+}
+
+svg:hover {
+	stroke: yellow;
+}
+
+.pointer_off {
+	stroke: none;
+}
+
+.pointer_off:hover {
+	stroke: none;
+}
+
+
+

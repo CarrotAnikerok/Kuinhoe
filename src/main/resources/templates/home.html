@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Куинхэ</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="/www/main.css" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 class = "korean-name">구인회</h1>
+            <nav>
+                <ul class = "main-resolution">
+                    <li><a href="home">О проекте</li>
+                    <li><a href="activeplot">Исследовать библиотеку</a></li>
+                    <li>Участники Куинхэ</li>
+                </ul>
+            </nav>
+        </header>
+        <div class="copy-ul">
+        <div class="main-resolution">
+        <main>
+            <p th:text="|Hello, ${title}!|" />
+            <div class="bubble">
+                <p>Приветствую тебя, дорогой читатель. Раз ты оказался здесь, то смею предположить, что ты заинтересован в Корейской Литературе.
+                     Этот проект преследует цель рассказать об одной конкретной литературной группе, созданной в 1933 году - Обществе Девяти,
+                     Круге Девяти или Куинхэ, а так же познакомить тебя с ее участниками, которые принадлежали к ней в тот или иной момент времени. 
+                </p>
+                <p>
+                    Куинхэ объединяет приверженцов “чистого искусства”. Участники Куинхэ пишут в разных стилях и форматах,
+                    а индентичность Куинхэ истекает из групповых характеристик каждого ее члена, 
+                    но сама она никогда не облада четкой коллективной индентичностью. И тем не менее, она объединила под своим крылом значительных и 
+                    влиятельных модернистких писателей своей эпохи.
+                </p>
+                <p>
+                    Из-за уникальности этой группы, дотошно изучить ее можно только через знакомство с ее участниками, чего и желает сделать этот проект.
+                     В этом пути изучения тебя ждет увлекательное исследование загадочной библиотеки с не менее загадочными персонажами, которые будут рады 
+                     рассказать тебе о Круге Девяти. Я надеюсь, что ты не заскучаешь на этом пути и получишь великолепное удовлетворение от изучения 
+                     чего-то столь уникального и навсегда оставшегося в веках.
+                </p>
+                <p>
+                    Если же у тебя пока нет сил на приключения, то ты можешь почитать отдельные статьи о Куинхэ и ее Участников на этом сайте.
+                </p>
+            </div>
+            <p>
+                <img src="/www/img/cover.png">
+            </p>
+        </main>
+    </div>
+    </div>
+    </body>
+</html>
