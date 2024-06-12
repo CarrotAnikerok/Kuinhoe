@@ -28,7 +28,7 @@ let scenario = '{ "lines" :[' +
 let text = '{ "employees" : [' +
     '{ "firstName":"John" , "lastName":"Doe" },' +
     '{ "firstName":"Anna" , "lastName":"Smith" },' +
-    '{ "firstName":"Peter" , "lastName":"Jones" } ]}';  fff
+    '{ "firstName":"Peter" , "lastName":"Jones" } ]}'; 
 const objScenario = JSON.parse(scenario);
 
 let dataR;
